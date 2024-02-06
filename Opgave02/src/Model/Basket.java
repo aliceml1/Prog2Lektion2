@@ -12,6 +12,10 @@ public class Basket {
         items.add(item);
     }
 
+    public ArrayList<Book> getItems() {
+        return new ArrayList<>(items);
+    }
+
     public void addDiscount(Discount discount) {
         discounts.add(discount);
     }
@@ -27,6 +31,7 @@ public class Basket {
         }
         System.out.println("-------------------------------------------------------------------------");
         for (Discount discount : discounts) {
+
             double discountAmount = discount.applyDiscount(this);
             System.out.printf("%-60s %6.2f kr.\n", discount.getDescription(), discountAmount);
             totalDiscount += discountAmount;
@@ -34,5 +39,16 @@ public class Basket {
         double discountedTotal = total + totalDiscount;
         System.out.println("-------------------------------------------------------------------------");
         System.out.printf("%-60s %5.2f kr.\n", "ialt: ", discountedTotal);
+    }
+
+    public double priceEbooks() {
+        double eBookPrice = 0.0;
+
+        for (Book item : items) {
+            if (item instanceof Ebook) {
+                eBookPrice += item.getPrice();
+            }
+        }
+        return eBookPrice;
     }
 }

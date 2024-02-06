@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lek03Opg02/Lek03Opg02.iml" filepath="$PROJECT_DIR$/Lek03Opg02/Lek03Opg02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Opg01/Opg01.iml" filepath="$PROJECT_DIR$/Opg01/Opg01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Opg03/Opg03.iml" filepath="$PROJECT_DIR$/Opg03/Opg03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Opgave02/Opgave02.iml" filepath="$PROJECT_DIR$/Opgave02/Opgave02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Prog2Lektion2.iml" filepath="$PROJECT_DIR$/Prog2Lektion2.iml" />
     </modules>
